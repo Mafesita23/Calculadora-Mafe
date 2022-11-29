@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding:0%;
+    font-family: 'Kalam';
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 3rem;
+    margin: 4px auto;
 
 
 }
@@ -23,35 +25,49 @@ body{
 }
 
 .calculadora {
-    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    background-color: rgb(247, 152, 152);
     width: 325px;
-    height: 550px;
+    height: 450px;
     padding-top: 1rem;
     border-radius: 1rem;
-    overflow: visible;
-    background: #f7ba2b;
-    background: var(--background);
     position: relative;
     z-index: 1;
-   }
-
-
-
-button {
-    border-radius: 15px;
-    border-width: 4px;
-    position: relative;
-    padding: 1rem 1rem;
-    background-color: #00000033;
-
-    
+    padding: 20px 20px 20px 20px;
 }
 
 
+button {
+    
+    background-color: #df5e5e;
+    border-radius: 4px;
+    width: 50px;
+    height: 70px;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-color: rgb(100, 95, 95);
+    
+}
+   
+button:hover {
+    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+   }
+   
+@keyframes slidernbw {
+    to {
+     background-position: 20vw;
+    }
+}
 
-   .display {
+
+.display {
     grid-column: 1 / -1;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     margin: 10px 10px 10px;
     flex-direction: column;
@@ -62,6 +78,7 @@ button {
     justify-content: space-between;
     word-break: break-all;
     box-shadow: 0px 0px 0px 10px #00000033;
+    
 }
 #valor-actual {
     font-size: 1rem;
